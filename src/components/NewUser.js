@@ -6,7 +6,7 @@ import useFormulario from '../hooks/useFormulario'
 
 
 export default function NewUser({user, users, setUsers}) {
-    const [formulario, handleChange, setFormulario] = useFormulario({
+    const [formulario, handleChange, setFormulario, reset] = useFormulario({
       firstName: '',
       lastName: '',
       cell:'',
@@ -31,6 +31,7 @@ export default function NewUser({user, users, setUsers}) {
       e.preventDefault()
       // Filtramos por el apellido del usuario para cargarlo, si existe lo modifica y si no lo añade como nuevo
       var index = users.findIndex(u=>u.name.last === formulario.lastName);
+      reset()
 
       let userToUpdate = {
 
