@@ -1,0 +1,27 @@
+.submit{
+    transition: all 0.5s ease;
+    background-color: #2185D0;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button{
+    border-radius: 5px;
+}
+
+.submit:hover{
+    background-color: yellowgreen;
+}
+
+.delete:hover{
+    background-color: red;
+}
+
+.edit:hover{
+    background-color: blue;
+}
