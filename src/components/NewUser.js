@@ -30,7 +30,7 @@ export default function NewUser({user, users, setUsers}) {
     const submit = e => {
       e.preventDefault()
       // Filtramos por el apellido del usuario para cargarlo, si existe lo modifica y si no lo añade como nuevo
-      var index = users.findIndex(u=>u.name.last === formulario.lastName);
+      var index = users.findIndex(u=>u.login.username === formulario.username);
       reset()
 
       let userToUpdate = {
